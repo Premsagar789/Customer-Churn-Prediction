@@ -1,0 +1,100 @@
+Case Study - Telecom Domain
+
+Business/Domain Understanding
+Context
+The telecommunications sector has become one of the main industries in developed countries. The technical progress and the increasing number of operators raised the level of competition. Companies are working hard to survive in this competitive market depending on multiple strategies. Three main strategies have been proposed to generate more revenues: 
+1. Acquire new customers 
+2. Upsell the existing customers
+3. Increase the retention period of customers 
+However, comparing these strategies taking the value of return on investment (RoI) of each into account has shown that the third strategy is the most profitable strategy, proving that retaining an existing customer costs much lower than acquiring a new one, in addition to being considered much easier than the upselling strategy. To apply the third strategy, companies have to decrease the potential of customer’s churn, known as "the customer movement from one provider to another".
+
+Customer churn is a considerable concern in service sectors with high competitive services. On the other hand, predicting the customers who are likely to leave the company will represent a potentially large additional revenue source if it is done in the early phase.
+
+Many research confirmed that machine learning technology is highly efficient to predict this situation. This technique is applied through learning from previous data.
+
+
+What is the impact of Customer Churn?
+Companies in subscription-based industries such as telecommunications, software as a service (SaaS), streaming services, insurance, and utilities often have a strong business impact by predicting churn. In these industries, retaining customers is crucial for long-term profitability, and accurately predicting churn allows companies to implement proactive measures to prevent it. Additionally, industries with high customer acquisition costs, such as financial services and e-commerce, can benefit significantly from churn prediction as it helps in optimizing marketing efforts and resource allocation.
+
+Customer Churn Dataset
+
+Domain - Telecommunication
+Dataset - Click here to download the dataset: churn_dataset.csv
+
+The data set includes information about:
+
+Customers who left within the last month – the column is called Churn
+Services that each customer has signed up for – phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
+Customer account information – how long they’ve been a customer, contract, payment method, paperless billing, monthly charges, and total charges
+Demographic info about customers – gender, age range, and if they have partners and dependents
+
+
+
+
+SPRINT 1 - EDA
+Task - Exploratory Data Analysis
+
+Assume that you are working as a Data Scientist with one of the world's leading telecom providers (like Vodafone).
+
+This is an open ended question. Kindly apply all your knowledge to perform an exploratory data analysis on the given dataset. It is known that the target variable is Churn.
+
+However, you are mandatorily supposed to solve the below mentioned EDA Task for your presentation:
+Explore the data distribution of each column.
+Identify some important patterns i.e. Which variables are most significant with respect to the target variable?
+Insights and Recommendations (i.e. Data Driven Business Decision)
+Write proper conclusions and provide recommendations to the bank based on the insights.
+SPRINT 2 - Build a Data App
+
+Background:
+Your manager has tasked you with building a Data Dashboard using Streamlit. A Data Dashboard is a dynamic way to present data insights, which is widely used in the industry. It allows for interactive exploration of the data for end-users. Unlike a static PowerPoint presentation, you'll be providing a fully functional, user-friendly dashboard to share with the client.
+
+Why a Data Dashboard?
+Dynamic Insights: Instead of static visuals, a dashboard offers real-time data exploration.
+Interactivity: End-users can interact with the data, making it more engaging and insightful.
+Professional Presentation: It's a modern, professional way to showcase data insights.
+
+Why Streamlit?
+User-Friendly: Streamlit is known for its simplicity, making it accessible even for those new to data science.
+Rapid Prototyping: It allows for quick development of interactive web applications.
+Integration with Data Tools: Streamlit easily integrates with popular data libraries like Pandas, Matplotlib, and Plotly.
+
+Benefits for You:
+You'll gain experience in building dynamic data applications.
+You'll be able to present data insights in a way that's more engaging and impactful than static presentations.
+
+Task: You'll be providing a fully functional, interactive Data Dashboard built using Streamlit, offering a modern and engaging way to present data insights to the client.
+SPRINT 3 - Model Building
+
+Task - Data Preparation and Model Building
+
+Problem Statement - Given various features about a customer like Gender, SeniorCitizen, Partner, Dependents etc.. , predict if the customer will churn or not.
+
+Why predict customer churn? (Business Impact)
+High customer churn rates can impact the long-term profitability of the telecom company. Retaining existing customers is often more cost-effective than acquiring new ones. Predictive models can identify factors and patterns associated with customer churn, allowing the company to take proactive measures to retain at-risk customers.
+
+
+
+Task - Prepare the Data and build a model to predict the churn of a customer.
+
+Step - 1: Load the data
+Step - 2: Document the below mentioned points properly: 
+- Identify the input and output/target variables. 
+- Identify the type of ML Task.
+- Identify the Evaluation Metric.
+	- For regression task - Mean Absolute Error
+	- For classification task - Accuracy
+Step - 3: Split the dataset into Training and Testing (recommended 75:25 split).
+Step - 4: Data preparation on train data:
+- For Numerical Variables - Standardization or Normalization (Fit and Transform)
+- For Categorical - LabelEncoding or OneHotEncoding (Choose wisely)
+Step - 5: Data preparation on test data:
+- For Numerical Variables - Standardization (Transform)
+- For Categorical - LabelEncoding or OneHotEncoding (Choose wisely)
+Step - 6: Model Training Phase - Use all the algorithms mentioned below to train separate models:
+- KNN
+- Logistic Regression
+- Support Vector Machines
+- Decision Trees
+- Random Forest
+Step - 7: Predict and evaluate each model separately using the correct evaluation metric. Use metrics.accuracy_score(actual, predict).
+Step - 8: Display a plot which shows all the algorithms applied along with the accuracies achieved. Write your conclusion on the best algorithm for Churn Prediction.
